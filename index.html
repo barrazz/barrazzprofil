@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultan Barra | Portfolio & CV Digital</title>
+
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- NAVBAR - Sticky Navigation Bar               -->
+    <!-- ============================================ -->
+    <nav id="navbar" aria-label="Navigasi utama">
+        <div class="nav-container">
+            <!-- Logo / Brand -->
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>BRZ<span class="logo-bracket"> /&gt;</span>
+            </a>
+
+            <!-- Menu Links (Desktop) -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> Tentang Saya</a></li>
+                <li><a href="#biodata" class="nav-link"><i class="fa-solid fa-id-card"></i> Biodata</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skill</a></li>
+                <li><a href="#experience" class="nav-link"><i class="fa-solid fa-chart-line"></i> Pengalaman</a></li>
+                <li><a href="#portfolio" class="nav-link"><i class="fa-solid fa-display"></i> Portofolio</a></li>
+                <li><a href="#achievements" class="nav-link"><i class="fa-solid fa-trophy"></i> Prestasi</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fa-solid fa-phone"></i> Kontak</a></li>
+            </ul>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- HERO / HEADER SECTION                        -->
+    <!-- ============================================ -->
+    <header id="home" class="hero">
+        <!-- Background Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content fade-in">
+            <!-- Profile Photo -->
+            <div class="hero-photo-wrapper">
+                <img
+                    src="assets/gambar4.jpeg"
+                    alt="Foto Saya"
+                    class="hero-photo"
+                >
+            </div>
+
+            <!-- Name -->
+            <h1 class="hero-name">Sultan Barra</h1>
+
+            <!-- Typing Animation -->
+            <div class="hero-typing">
+                <span class="typing-text" id="typingText"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+
+            <!-- Slogan -->
+            <p class="hero-slogan">"Belajar hari ini untuk membangun teknologi masa depan."</p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-buttons">
+                <a href="#biodata" class="btn btn-primary">
+                    <i class="fa-solid fa-file-lines"></i> Lihat CV
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fa-solid fa-phone"></i> Hubungi Saya
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- MAIN CONTENT                                 -->
+    <!-- ============================================ -->
+    <main>
+
+        <!-- ======================================== -->
+        <!-- TENTANG SAYA                              -->
+        <!-- ======================================== -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Tentang Saya</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <article class="about-content reveal">
+                    <div class="about-text">
+                        <p>
+                            Halo, saya <strong>Barra</strong>, seorang siswa kelas XI Rekayasa Perangkat Lunak di
+                            <strong>SMK Muhammadiyah 1 Bantul</strong>.
+                        </p>
+                        <p>
+                            Saya memiliki ketertarikan yang tinggi terhadap dunia teknologi, khususnya
+                            <strong>Web Development</strong>, <strong>UI Design</strong>, dan <strong>pengembangan aplikasi berbasis web</strong>
+                        </p>
+                        <p>
+                            Saya senang mempelajari hal-hal baru, mengembangkan kemampuan coding, serta membuat website yang
+                            modern, responsif, dan nyaman digunakan.
+                        </p>
+                        <p>
+                            Saya percaya bahwa <strong>konsistensi</strong>, <strong>kerja keras</strong>, dan
+                            <strong>semangat belajar</strong> merupakan kunci utama untuk menjadi seorang programmer profesional
+                            di masa depan.
+                        </p>
+                    </div>
+                    <div class="about-decoration">
+                        <div class="about-icon-box">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- BIODATA                                   -->
+        <!-- ======================================== -->
+        <section id="biodata" class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Biodata</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <article class="biodata-card glass-card reveal">
+                    <div class="biodata-grid">
+                        <div class="biodata-item">
+                            <span class="biodata-label"><i class="fa-solid fa-user"></i> Nama Lengkap</span>
+                            <span class="biodata-value">YUSUF AKBAR HAZEL MARWANDA</span>
+                        </div>
+                        <div class="biodata-item">
+                            <span class="biodata-label"><i class="fa-solid fa-school"></i> Sekolah</span>
+                            <span class="biodata-value">SMK Muhammadiyah 1 Bantul</span>
+                        </div>
+                        <div class="biodata-item">
+                            <span class="biodata-label"><i class="fa-solid fa-graduation-cap"></i> Jurusan</span>
+                            <span class="biodata-value">Rekayasa Perangkat Lunak</span>
+                        </div>
+                        <div class="biodata-item">
+                            <span class="biodata-label"><i class="fa-solid fa-users"></i> Kelas</span>
+                            <span class="biodata-value">XI RPL 1</span>
+                        </div>
+                        <div class="biodata-item">
+                            <span class="biodata-label"><i class="fa-solid fa-location-dot"></i> Alamat</span>
+                            <span class="biodata-value">Sewon, Bantul, DIY</span>
+                        </div>
+                        <div class="biodata-item">
+                            <span class="biodata-label"><i class="fa-solid fa-circle-info"></i> Status</span>
+                            <span class="biodata-value">Pelajar</span>
+                        </div>
+                        <div class="biodata-item">
+                            <span class="biodata-label"><i class="fa-solid fa-heart"></i> Hobi</span>
+                            <span class="biodata-value">Bersepeda, Badminton, Belajar Teknologi, Nonton Film</span>
+                        </div>
+                        <div class="biodata-item">
+                            <span class="biodata-label"><i class="fa-solid fa-star"></i> Cita-cita</span>
+                            <span class="biodata-value">Full Stack Web Developer</span>
+                        </div>
+                        <div class="biodata-item">
+                            <span class="biodata-label"><i class="fa-solid fa-language"></i> Bahasa</span>
+                            <span class="biodata-value">Indonesia, Inggris (lumayan), jepang(dasar)</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- SKILL                                     -->
+        <!-- ======================================== -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Skill</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Technical Skills -->
+                    <article class="skills-category reveal">
+                        <h3 class="skills-category-title"><i class="fa-solid fa-code"></i> Technical Skills</h3>
+                        <div class="skill-item" data-progress="95">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--target-width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="85">
+                            <div class="skill-header">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--target-width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="60">
+                            <div class="skill-header">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--target-width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="50">
+                            <div class="skill-header">
+                                <span class="skill-name">Laravel</span>
+                                <span class="skill-percent">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--target-width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="60">
+                            <div class="skill-header">
+                                <span class="skill-name">Canva</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--target-width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="85">
+                            <div class="skill-header">
+                                <span class="skill-name">Microsoft Office</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--target-width: 85%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Soft Skills -->
+                    <article class="skills-category reveal">
+                        <h3 class="skills-category-title"><i class="fa-solid fa-brain"></i> Soft Skills</h3>
+                        <div class="skill-item" data-progress="90">
+                            <div class="skill-header">
+                                <span class="skill-name">Problem Solving</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--target-width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="95">
+                            <div class="skill-header">
+                                <span class="skill-name">Teamwork</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--target-width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="90">
+                            <div class="skill-header">
+                                <span class="skill-name">Public Speaking</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--target-width: 90%"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- PENGALAMAN (Timeline)                     -->
+        <!-- ======================================== -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Pengalaman</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-year">2025</span>
+                            <p class="timeline-desc">Masuk RPL dan Mulai belajar HTML.</p>
+                        </div>
+                    </article>
+
+                    <!-- Timeline Item 2 -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-year">2025</span>
+                            <p class="timeline-desc">Belajar CSS dan membuat website sederhana.</p>
+                        </div>
+                    </article>
+
+                    <!-- Timeline Item 2 -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-year">2025</span>
+                            <p class="timeline-desc">Join organisasi sekolah(remaja masjid,IPM,technopark,lazismu,PKS)</p>
+                        </div>
+                    </article>
+
+                    <!-- Timeline Item 3 -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-year">2026</span>
+                            <p class="timeline-desc">Belajar PHP.</p>
+                        </div>
+                    </article>
+
+                    <!-- Timeline Item 4 -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-year">2026</span>
+                            <p class="timeline-desc">Belajar Framework Laravel.</p>
+                        </div>
+                    </article>
+
+                    <!-- Timeline Item 5 -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-year">2026</span>
+                            <p class="timeline-desc">Menjadi Kakak Pendamping MPLS SMK Muhammadiyah 1 Bantul.</p>
+                        </div>
+                    </article>
+
+                    <!-- Timeline Item 6 -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-year">2026</span>
+                            <p class="timeline-desc">Membuat Personal Portfolio Website.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- PORTOFOLIO                                -->
+        <!-- ======================================== -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Portofolio</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <article class="portfolio-card glass-card reveal">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/GAMBAR13.jpg" alt="Website Biodata" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-btn" data-project="0">
+                                    <i class="fa-solid fa-eye"></i> Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">SERTIFIKAT</h3>
+                            <p class="portfolio-desc">saya mengikuti lomba kirab budaya</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">sertifikat</span>
+                               
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="portfolio-card glass-card reveal">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/GAMBAR7.jpg" alt="Website Portfolio" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-btn" data-project="1">
+                                    <i class="fa-solid fa-eye"></i> Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">BELA NEGARA</h3>
+                            <p class="portfolio-desc">Saya juga sering menjadi petugas di setiap upacara atau apel.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Petugas upacara</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="portfolio-card glass-card reveal">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/GAMBAR91.jpg" alt="Website Login" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-btn" data-project="2">
+                                    <i class="fa-solid fa-eye"></i> Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">IPM</h3>
+                            <p class="portfolio-desc">saya juga tertarik untuk mengikuti organisasi agar bisa menambah pengalaman positif.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Mendampingi adek kelas saat MPLS</span>
+                               
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="portfolio-card glass-card reveal">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/GAMBAR12.jpg" alt="Website Sekolah" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-btn" data-project="3">
+                                    <i class="fa-solid fa-eye"></i> Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">REMASNAR</h3>
+                            <p class="portfolio-desc">saya juga mengikuti remaja masjid dan melakukan hal hal positif.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">remaja masjid di sekolah</span>
+                               
+                            </div>
+                        </div>
+                    </article>
+
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- PRESTASI                                  -->
+        <!-- ======================================== -->
+        <section id="achievements" class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Prestasi</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <article class="achievements-list reveal">
+                    <div class="achievement-item glass-card">
+                        <div class="achievement-icon"><i class="fa-solid fa-users"></i></div>
+                        <p>Aktif dalam semua organisasi yang ada di sekolah.</p>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <div class="achievement-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                        <p>Menjadi Kakak Pendamping MPLS.</p>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <div class="achievement-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <p>Aktif mengikuti pembelajaran Rekayasa Perangkat Lunak.</p>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <div class="achievement-icon"><i class="fa-solid fa-brain"></i></div>
+                        <p>juara 2 lomba adzan.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- HOBI (Menggunakan <aside>)                -->
+        <!-- ======================================== -->
+        <section id="hobbies" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Hobi</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <aside class="hobbies-grid reveal" aria-label="Daftar hobi">
+                    <div class="hobby-card glass-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-code"></i></div>
+                        <span class="hobby-name">Coding</span>
+                    </div>
+                    <div class="hobby-card glass-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-palette"></i></div>
+                        <span class="hobby-name">Desain</span>
+                    </div>
+                    <div class="hobby-card glass-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
+                        <span class="hobby-name">Badminton</span>
+                    </div>
+                    <div class="hobby-card glass-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <span class="hobby-name">Membaca</span>
+                    </div>
+                    <div class="hobby-card glass-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-music"></i></div>
+                        <span class="hobby-name">Musik</span>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- MOTTO HIDUP                               -->
+        <!-- ======================================== -->
+        <section id="motto" class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Motto Hidup</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <article class="motto-card glass-card reveal">
+                    <div class="motto-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <blockquote class="motto-text">
+                        "Tidak perlu menjadi hebat untuk memulai, tetapi mulailah agar menjadi hebat."
+                    </blockquote>
+                    <div class="motto-author">— Sultan Barra</div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- KONTAK                                    -->
+        <!-- ======================================== -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Kontak</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info Cards -->
+                    <article class="contact-info reveal">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/6281263533799" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+                            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="contact-detail">
+                                <h4>WhatsApp</h4>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:boomboni.id@email.com" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-detail">
+                                <h4>Email</h4>
+                                <p>boomboni.id@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/sultanzky_barxx" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+                            <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="contact-detail">
+                                <h4>Instagram</h4>
+                                <p>@sultanzky_barxx</p>
+                            </div>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/barrazz" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+                            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-detail">
+                                <h4>GitHub</h4>
+                                <p>github.com/barrazz</p>
+                            </div>
+                        </a>
+
+                        <!-- Location -->
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-detail">
+                                <h4>Lokasi</h4>
+                                <p>Bantul, Yogyakarta</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Contact Form -->
+                    <article class="contact-form-wrapper glass-card reveal">
+                        <h3 class="form-title">Kirim Pesan</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="formName">Nama</label>
+                                <input type="text" id="formName" name="name" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail">Email</label>
+                                <input type="email" id="formEmail" name="email" placeholder="Masukkan email Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formMessage">Pesan</label>
+                                <textarea id="formMessage" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+                            </button>
+                        </form>
+                        <!-- Success Message -->
+                        <div id="formSuccess" class="form-success" style="display: none;">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>Pesan berhasil dikirim! Terima kasih telah menghubungi saya.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!-- PORTFOLIO MODAL                              -->
+    <!-- ============================================ -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modalClose" aria-label="Tutup modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="modalImg" src="" alt="Project Image" class="modal-img">
+            <h3 id="modalTitle" class="modal-title"></h3>
+            <p id="modalDesc" class="modal-desc"></p>
+            <div id="modalTags" class="modal-tags"></div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-copy">&copy; 2026 Sultan Barra</p>
+            <p class="footer-tagline">JUST A KID FROM SUMATRA 🤙🏻</p>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- BACK TO TOP BUTTON                           -->
+    <!-- ============================================ -->
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
